@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="uploadApp">
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+  <div class="main-wrapper" ng-controller='fileUploadController'>
+    <header class="header">
+      <h1>S3 UPLOADER</h1>
+      <ul class="nav-bar">
+        <li><a href="#/upload">UPLOAD FILE</a></li>
+        <li><a href="#/show">SHOW</a></li>
+      </ul>
+    </header>
+    <div ui-view></div>
+  </div>
+  <!-- <div ng-controller = "FileUploadController">
+    <input type="file" file-model="myFile">
+    <button ng-click = "fileUpload()">UPLOAD</button>
+  </div> -->
+  </body>
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/angular.min.js"></script>
+  <script type="text/javascript" src="assets/js/ui-router.min.js"></script>
+  <script type="text/javascript" src="app/app.module.js"></script>
+  <script type="text/javascript" src="app/app.route.js"></script>
+  <script type="text/javascript" src="app/services/file-upload-service.js"></script>
+  <script type="text/javascript" src="app/services/file-upload-directive.js"></script>
+  <script type="text/javascript" src="app/controllers/file-upload-controller.js"></script>S
+  <!-- <script type="text/javascript" src="Services/my-app-service.js"></script> -->
+</html>

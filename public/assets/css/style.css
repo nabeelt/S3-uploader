@@ -1,0 +1,186 @@
+html,body,h1,ul,li,p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-appearance: none;
+  font-family: 'Brandon_med';
+}
+@font-face {
+  font-family: 'Brandon_bld';
+  src: url('../fonts/brandon/Brandon_bld.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'Brandon_blk';
+  src: url('../fonts/brandon/Brandon_blk.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'Brandon_light';
+  src: url('../fonts/brandon/Brandon_light.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'Brandon_med';
+  src: url('../fonts/brandon/Brandon_med.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+/*HEADER*/
+.header{
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #1d5e77;
+  height: 40px;
+  position: fixed;
+}
+.header h1{
+  font-size: 36px;
+  font-family: 'Brandon_blk';
+  color: #fff;
+  float: left;
+  padding-left: 20px;
+}
+.nav-bar {
+  list-style-type: none;
+  float: right;
+  padding-right: 40px;
+}
+.nav-bar li{
+  display: inline-block;
+  color: #fff;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+.nav-bar li a{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.upload-wrapper{
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+.upload-button {
+  text-align: center;
+  background-color: #1d5e77;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+.upload-button:hover{
+  background-color: #538294
+}
+.upload-button span{
+  padding-right: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.modal {
+  width: 60%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 300px;
+  transition: 1s;
+  opacity: 0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 0 8px #000;
+  border-radius: 3px; 
+}
+.black-overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+}
+.open {
+  opacity: 1;
+  z-index: 3;
+}
+.modal p {
+  text-align: center;
+  font-size: 32px;
+}
+footer.modal-footer {
+  color: rgba(155, 155, 155, 0.79);
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 0;
+}
+#file-input{
+  display: none;
+}
+.modal-upload {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -64px;
+  cursor: pointer;
+  top: 65px;
+}
+.upload-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  border: 2px hidden;
+  padding: 13px;
+  font-family: 'Brandon_blk';
+  background-color: #76c2af;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0 0 2px #6b6b6b;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+.disabled{
+  background-color: #9b9b9b;
+  pointer-events: none;
+}
+.file-name {
+ /* padding-top: 70px;*/
+  color: #76c2af;
+  font-size: 20px !important;
+  float: left;
+}
+.close-btn{
+  float: left;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.name-wrapper{
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+}

@@ -1,0 +1,20 @@
+<div class="upload-wrapper">
+  <img src="assets/images/upload_cloud.png">
+  <div class="upload-button" ng-click = 'openModal()'>
+    <span>SELECT A FILE</span>
+    <img src="assets/images/upload.png">
+  </div>
+</div>
+<div class="modal" ng-model = "isModalOpen" ng-class = {'open':isModalOpen}>
+  <p>You can upload .xslx & .csv files here</p>  
+  <label for="file-input">
+    <img src="assets/images/modal_upload.png" class="modal-upload" />
+  </label>
+  <input id="file-input" type="file" ng-model='uploaded' accept='spreadsheet/*' file-model = "myFile"/>
+  <button ng-click = "uploadFile()" ng-class={'disabled':!uploaded} class="upload-btn" >UPLOAD ME</button>
+  <div class="name-wrapper"></div>
+  <!-- <p class="file-name"></p>
+  <button ng-click = 'clear()'>clear</button> -->
+  <!-- <footer class="modal-footer">Max file size is 200MB</footer> -->
+</div>
+<div class="black-overlay" ng-show='isModalOpen' ng-click ='isModalOpen = !isModalOpen'></div>
