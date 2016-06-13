@@ -10,7 +10,7 @@
   <label for="file-input">
     <img src="assets/images/modal_upload.png" class="modal-upload" />
   </label>
-  <input id="file-input" type="file" ng-model='uploaded' accept='spreadsheet/*' file-model = "myFile"/>
+  <input id="file-input" type="file" ng-model='uploaded' accept='spreadsheet/*' file-model = "myFile" />
   <button ng-click = "uploadFile()" ng-class={'disabled':!uploaded} class="upload-btn" >UPLOAD ME</button>
   <div class="name-wrapper"></div>
   <!-- <p class="file-name"></p>

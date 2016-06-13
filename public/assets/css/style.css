@@ -25,15 +25,6 @@ html,body,h1,ul,li,p{
   font-style: normal;
   font-variant: normal;
 }
-
-@font-face {
-  font-family: 'Brandon_light';
-  src: url('../fonts/brandon/Brandon_light.otf');
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-}
-
 @font-face {
   font-family: 'Brandon_med';
   src: url('../fonts/brandon/Brandon_med.otf');
@@ -169,7 +160,6 @@ footer.modal-footer {
   pointer-events: none;
 }
 .file-name {
- /* padding-top: 70px;*/
   color: #76c2af;
   font-size: 20px !important;
   float: left;

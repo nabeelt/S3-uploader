@@ -5,7 +5,7 @@ app.controller('fileUploadController', ['$scope', 'fileUpload',  function($scope
   $scope.uploadFile = function(){
     var file = $scope.myFile;
     console.log('file is ');
-    console.dir(file);
+    console.log(file);
   };
   $scope.clear = function(){
       $(".file-name").text('');
